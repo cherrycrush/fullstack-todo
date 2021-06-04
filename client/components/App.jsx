@@ -9,7 +9,7 @@ function App () {
   return (
     <>
       <header className="header">
-        <h1>todos</h1>
+        <h1>Aaron's To Do List</h1>
         <AddTodo />
       </header>
       <section className="main"></section>

@@ -11,3 +11,5 @@ router.get('/', (req, res) => {
       res.status(500).send('DATABASE ERROR: ' + err.message)
     })
 })
+
+module.exports = router
