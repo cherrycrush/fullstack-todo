@@ -14,7 +14,7 @@ function delTask (id, db = connection) {
 }
 
 function updateTask (id, db = connection) {
-
+  return db('tasks').select(id)
 }
 
 module.exports = {
