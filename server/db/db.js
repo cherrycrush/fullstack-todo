@@ -6,7 +6,9 @@ function getTasks (db = connection) {
 }
 
 function addTask (task, db = connection) {
-  return db('tasks').insert(task)
+  return db('tasks').insert({
+    task: task
+  })
 }
 
 function delTask (id, db = connection) {
