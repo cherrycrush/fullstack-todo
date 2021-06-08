@@ -4,7 +4,6 @@ import { getTasks } from '../apis/api'
 
 function App () {
   const [tasks, setTasks] = useState([])
-  const [taskButton, setAddTaskButton] = useState(false)
 
   useEffect(() => {
     loadTasks()
