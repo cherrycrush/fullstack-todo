@@ -12,7 +12,9 @@ function addTask (task, db = connection) {
 }
 
 function delTask (id, db = connection) {
-  return db('tasks').where(id)
+  return db('tasks')
+    .del()
+    .where('id', id)
 }
 
 function updateTask (id, db = connection) {
