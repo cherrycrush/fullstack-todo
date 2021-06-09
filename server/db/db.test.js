@@ -18,3 +18,12 @@ test('deletes a task by id', () => {
       return null
     })
 })
+
+test('adds a new task', () => {
+  const taskId = '4'
+  return db.addTask(taskId, testDb)
+    .then(result => {
+      expect(result).toEqual([4])
+      return null
+    })
+})
