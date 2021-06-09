@@ -3,25 +3,6 @@ import AddTodo from './AddTodo'
 import { getTasks } from '../apis/api'
 
 function App () {
-  const [tasks, setTasks] = useState([])
-
-  useEffect(() => {
-    loadTasks()
-  }, [])
-
-  function loadTasks () {
-    getTasks()
-      .then(tasks => {
-        setTasks(tasks)
-        return null
-      })
-      .catch(err => console.log(err))
-  }
-
-  function renderForm () {
-    setAddTaskButton(true)
-  }
-
   return (
     <>
       <header className="header">
